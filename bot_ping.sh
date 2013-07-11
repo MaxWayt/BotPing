@@ -30,5 +30,5 @@ done
 
 for dest in $DEST
 do
-    mail -E -s $MAILFILE $dest < $MAILFILE
+    mail -E -s $MAILTITLE $dest < $MAILFILE
 done
