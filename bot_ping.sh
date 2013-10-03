@@ -1,10 +1,11 @@
 #!/bin/bash
 HOSTS="google.com other.host.com"
+HOSTNAME="localhost" # current machine hostname
 COUNT=4 # ping count
 LIMIT=2 # ping failed limit
 
 MAILFILE="/tmp/bot_ping.mail" # temp file for email
-MAILTITLE="Bot Ping Alert"
+MAILTITLE="$HOSTNAME Bot Ping Alert"
 DEST="admin@host.com other@host.com"
 
 echo "" > $MAILFILE
